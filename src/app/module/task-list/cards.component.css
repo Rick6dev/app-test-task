@@ -1,0 +1,76 @@
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    margin: auto;
+}
+
+
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 15px;
+   }
+   .success{
+    background: #05a312;
+    box-shadow: 1px 5px 60px 0px #0a88256b;
+   }
+   .nosuccess{
+    background: #a31d05;
+    box-shadow: 1px 5px 60px 0px #881d0a6b;
+   }
+   
+   .card .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #0d0a49cc;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+   }
+   
+   .card span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+   }
+   
+   .card .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+   }
+   
+   .card .img {
+    width: 70px;
+    height: 80px;
+    background: transparent;
+    box-shadow: 1px 1px  3px rgba(0, 0, 0, 0.144) inset,-1px -1px  2px rgba(0, 0, 0, 0.199) inset;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+   }
+   
+   .card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #6b64f3;
+    color: white;
+    font-weight: 600;
+   }
+   
+   .card button:hover {
+    background: #087a7e;
+   }

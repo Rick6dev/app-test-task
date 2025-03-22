@@ -1,0 +1,157 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #8c8c8c;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content2{
+  margin-top: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+.text-black {
+  color: #000;
+}
+
+.content {
+  padding: 0 0;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  background: none;
+}
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.btn,
+.form-control,
+.custom-select {
+  height: 45px;
+  border-radius: 0;
+}
+
+.contact-wrap .form,
+.contact-wrap .contact-info {
+  padding: 40px;
+}
+.contact-wrap .contact-info {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-wrap .contact-info ul li {
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-wrap .contact-info ul li .wrap-icon {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 5px;
+}
+.contact-wrap .form {
+  background: #fff;
+}
+.contact-wrap .form h3 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact-wrap .contact-info {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contact-wrap .contact-info a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+label.error {
+  font-size: 12px;
+  color: red;
+}
+
+.btn-icon {
+  background-color: rgb(98, 95, 160);
+  color: #ffffff;
+  font-weight: bold;
+}
+.btn-icon:hover {
+  background-color: rgb(60, 56, 127);
+  color: #ffffff;
+  font-weight: bold;
+}
+body {
+  background-color: aliceblue;
+}
+
+text-button {
+  color: #000;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  margin-top: 300px;
+}
+
+.btn-ico {
+  width: 50px;
+}
+
+.form {
+  margin: auto;
+}
+
+.title {
+  margin: auto;
+}
+input {
+  margin-bottom: 1.2em !important;
+}
+.head {
+  display: flex;
+  justify-content: center;
+}
+content {
+}

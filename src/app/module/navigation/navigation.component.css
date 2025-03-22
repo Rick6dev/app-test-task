@@ -1,0 +1,40 @@
+.navbar {
+    background-color: white;
+    width: 100%;
+    padding: 10px 0; /* Add some padding for spacing */
+  }
+  
+  .flex-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertically center items */
+    padding-right: 20px; /* Add right padding for spacing */
+  }
+  
+  .desktop-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .desktop-nav li {
+    margin-left: 20px; /* Add spacing between list items */
+  }
+  
+  .desktop-nav li:first-child {
+    margin-left: 0; /* Remove left margin from the first item */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: rgb(1, 158, 211);
+    font-weight: bold;
+    font-family: sans-serif; /* Use a simple sans-serif font */
+    padding: 5px 10px; /* Add padding to the links */
+    border-radius: 3px; /* Optional: Add rounded corners */
+  }
+  
+  .nav-link:hover {
+    background-color: #f0f0f0; /* Optional: Add a subtle hover effect */
+  }

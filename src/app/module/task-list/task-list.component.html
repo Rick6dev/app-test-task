@@ -1,0 +1,61 @@
+<main id="content2" class="main" *ngIf="tasks != null">
+    <div class="">
+      <div class="table-data">
+        <div class="order">
+          <div class="head">
+            <h3>Listado Tareas</h3>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" colspan="8">
+                  <div class="row row-center">
+
+
+                    <div class="col-md-3 form-group">
+                    <label class="form-label" for="areaTrabajo"
+                        ><strong>Área Trabajo</strong></label
+                    >
+                    <select
+                        class="select form-select"
+                        [(ngModel)]="selectedStatus" (change)="filterItems(selectedStatus)"
+                        id="selectedStatus"
+                      >
+                        <option value="2" selected>Todos</option>
+                        <option value="1">Cerrado</option>
+                        <option value="0">Abiertos</option>
+                      </select>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <thead>
+           
+            </thead>
+
+            <tbody>
+                <div class="cards">
+                    <div class="card"  [ngClass]="{'success':result.state===1, 'nosuccess':result.state===0}" *ngFor="let result of tasks">
+                        <div class="card-border-top">
+                        </div>
+                        <div class="img">
+                        </div>
+                        <span> {{result.titleTask}}</span>
+                        <p class="job" >{{result.state | pipeStateTask}}</p>
+                        <button (click)="changeState(result.idTask)"> Editar 
+                        </button>
+                      </div>
+                </div>
+            
+            </tbody>
+  
+        
+          </table>
+          <div>
+
+        </div>
+        </div>
+    </div>
+    </div>
+  </main>
