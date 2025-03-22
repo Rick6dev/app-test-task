@@ -52,7 +52,7 @@ export class MessageServiceService {
   }
 
   MessageAlertSuccess(message: string, title: string) {
-    // this.navigationComponent.updateNav();
+    
     Swal.fire({
       title: title,
       text: message,

@@ -18,9 +18,8 @@ export class TaskService {
     const tareas = localStorage.getItem('tareas');
     if (tareas) {
       this.tasks = JSON.parse(tareas) || [];
-      this.tasksAll = [...this.tasks]; // Crear una copia para evitar referencias directas
+      this.tasksAll = [...this.tasks]; 
     }
-    console.log(tareas);
     return this.tasks;
   }
 
@@ -29,7 +28,7 @@ export class TaskService {
     if (taskOne) {
       console.log(taskOne);
       taskOne.state = taskOne.state === 0 ? 1 : 0;
-      this.tasks = [...this.tasks]; // Actualizar la referencia del array para detectar cambios
+      this.tasks = [...this.tasks]; 
       localStorage.setItem('tareas', JSON.stringify(this.tasks));
     }
   }
@@ -37,14 +36,14 @@ export class TaskService {
   filterItems(selectedStatus: string): Task[] {
     const selectedTerm = parseInt(selectedStatus);
     if (selectedStatus === '2') {
-      this.tasks = [...this.tasksAll]; // Restaurar la lista completa
+      this.tasks = [...this.tasksAll]; 
     } else {
       this.tasks = this.tasksAll.filter((task: Task) => task.state === selectedTerm);
     }
     return this.tasks;
   }
 
-  // Método para obtener la lista de tareas actual
+
   getFilteredTasks(): Task[] {
     return this.tasks;
   }
@@ -67,7 +66,7 @@ export class TaskService {
       let tareas = JSON.parse(tareasString) || [];
       // Resto de tu código
 
-      let nuevoId = this.tasks.length > 0 ? this.tasks[this.tasks.length - 1].idTask + 1 : 1; // Genera el nuevo id
+      let nuevoId = this.tasks.length > 0 ? this.tasks[this.tasks.length - 1].idTask + 1 : 1; 
 
       let nuevaTarea = {
         idTask: nuevoId,
@@ -75,9 +74,9 @@ export class TaskService {
         state: forma.value.state
       };
   console.log(tareas )
-      this.tasks.push(nuevaTarea); // Agrega la nueva tarea al array
-      localStorage.setItem('tareas', JSON.stringify(this.tasks)); // Guarda el array en localStorage
-    }// Obtiene el array o inicializa uno vacío
+      this.tasks.push(nuevaTarea); 
+      localStorage.setItem('tareas', JSON.stringify(this.tasks)); 
+    }
    
 else{
   let nuevaTarea = {
@@ -87,7 +86,7 @@ else{
   };
   this.tasks.push(nuevaTarea);
   console.log(this.tasks)
-  localStorage.setItem('tareas', JSON.stringify(this.tasks)); // Guarda el array en localStorage
+  localStorage.setItem('tareas', JSON.stringify(this.tasks));
 
 }
   this.messageService.MessageAlertSuccess("La Tarea fue registrada satifactoriamente","Estimado Usuario!")
