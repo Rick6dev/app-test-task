@@ -1,27 +1,36 @@
 # TaskTest
+# Evaluación de Habilidades en Angular 16: Gestión de Tareas Pendientes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Este proyecto es una aplicación de gestión de tareas pendientes (To-Do List) desarrollada con Angular 16, creada como parte de una evaluación de habilidades.
 
-## Development server
+## Instrucciones
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1.  Asegúrate de tener Node.js y npm instalados en tu sistema.
+2.  Clona este repositorio: `git clone https://github.com/Rick6dev/app-test-task.git`
+3.  Instala las dependencias: `npm install`
+4.  Ejecuta la aplicación: `ng serve --open`
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **Listado de Tareas:**
+    * Muestra una lista de tareas con su título y estado (completada o pendiente).
+    * Componente: `TaskListComponent`.
+* **Agregar Nueva Tarea:**
+    * Formulario para agregar nuevas tareas con validación del título (requerido).
+    * Componente: `AddTaskComponent`.
+* **Editar Estado de Tarea:**
+    * Botón para alternar el estado de cada tarea entre pendiente y completada.
+* **Filtrar Tareas:**
+    * Filtro para mostrar tareas completadas, pendientes o todas.
+    * Directiva o servicio de filtro.
+* **Uso de Servicios:**
+    * Servicio `TaskService` para operaciones CRUD (crear, leer, actualizar, borrar).
+    * Almacenamiento temporal de datos en memoria.
+* **Manejo de Rutas:**
+    * Rutas:
+        * `/tasks`: Listado de tareas.
+        * `/add-task`: Formulario para agregar tareas.
+* **Estilo:**
+    * Se utiliza CSS  para una interfaz visualmente atractiva.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Estructura del Proyecto
